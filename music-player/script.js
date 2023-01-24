@@ -5,7 +5,6 @@ const themeButton3 = themeButtons[2];
 
 const player = document.querySelector('main');
 const progress = document.querySelector('#progress');
-console.log(progress);
 
 themeButton1.addEventListener('click', () => {
   player.classList = 'theme1';
