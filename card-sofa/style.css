@@ -1,0 +1,139 @@
+:root {
+  font-size: 62.5%;
+
+  --primary-color: #271A45;
+}
+
+*, *::before, *::after {
+	  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+	font: inherit;
+}
+
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%
+}
+
+body, input, button, textarea {
+  color: var(--primary-color);
+
+  font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+  line-height: 100%;
+  -webkit-font-smoothing: antialiased; 
+}
+
+body {
+  min-height: 100vh;
+  background-color: #D9CDF7;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+
+  height: 100vh;
+}
+
+.card {
+  max-width: 45rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+}
+
+.card > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+  width: 3.3rem;
+  height: 2.3rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  
+  position: absolute;
+  top: .8rem;
+  right: 5rem;
+}
+
+.text {
+  min-width: 27.4rem;
+}
+
+.text > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.code, .price, button {
+  text-transform: uppercase;
+}
+
+.code {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: 'Crimson Pro', serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 1.6rem;
+  opacity: 0.67;
+}
+
+.text button {
+  background-color: transparent;
+  
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  
+  margin-top: 2rem;
+  padding: .8rem 1.6rem;
+  border: 0.5px solid var(--primary-color);
+  border-radius: 99.9rem;
+
+  cursor: pointer;
+
+  transition: transform 300ms;
+}
+
+.text button:hover {
+  transform: translateY(-5px);
+}
+
+button.hide {
+  display: none;
+}
+
+
+
+@media (min-width: 40em) {
+  main {
+    flex-direction: row;
+    padding-right: 5vw;
+  }
+
+}
