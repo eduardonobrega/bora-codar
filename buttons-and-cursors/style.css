@@ -1,0 +1,190 @@
+:root {
+  font-size: 62.5%;
+
+  --bg-color: #0b0911;
+  --text-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+  color: var(--text-color);
+  font-size: 1.6rem;
+
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+
+  padding: 5vw 3vw;
+}
+
+h1,
+button {
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+p {
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+
+  max-width: 71ch;
+  opacity: 0.67;
+
+  margin-top: 0.8rem;
+}
+
+main {
+  margin-top: 4rem;
+  overflow-x: auto;
+}
+
+.wrapper-table {
+  background-color: #1c162c;
+
+  width: 928.5px;
+  border-radius: 0.8rem;
+  padding: 2.4rem 0.6rem 0.6rem 2.4rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  background-color: #0b0911;
+}
+
+th {
+  background-color: #1c162c;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+tr:first-child th {
+  padding-bottom: 2.4rem;
+}
+
+tr:not(tr:first-child) th {
+  padding-right: 2.4rem;
+}
+
+button {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+
+  padding: 1.2rem 2.4rem;
+  border-radius: 2.4rem;
+
+  border: none;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  margin: 0 auto;
+}
+
+td {
+  padding: 1.6rem;
+}
+
+td:first-of-type {
+  padding-left: 3.2rem;
+}
+
+tr:nth-child(2) td {
+  padding-top: 3.2rem;
+}
+tr:last-child td {
+  padding-bottom: 3.2rem;
+}
+
+.primary {
+  background-color: #8257e5;
+}
+
+.secondary {
+  background-color: #3c3748;
+}
+
+.tertiary {
+  background-color: transparent;
+}
+
+tr:nth-child(3) .primary,
+tr:nth-child(3) .secondary {
+  transition: background-color 300ms;
+}
+
+tr:nth-child(3) .primary:hover {
+  background-color: #9674e6;
+}
+
+tr:nth-child(3) .secondary:hover {
+  background-color: #6a617f;
+}
+
+tr:nth-child(4) .primary:focus,
+tr:nth-child(4) .secondary:focus,
+tr:nth-child(4) .tertiary:focus {
+  outline: 2px solid #d9cdf7;
+}
+
+button:disabled {
+  opacity: 0.56;
+  cursor: not-allowed;
+}
+
+button svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+tr:nth-child(6) .primary,
+tr:nth-child(6) .secondary,
+tr:nth-child(6) .tertiary {
+  cursor: wait;
+}
+
+tr:nth-child(7) .primary,
+tr:nth-child(7) .secondary,
+tr:nth-child(7) .tertiary {
+  cursor: all-scroll;
+}
