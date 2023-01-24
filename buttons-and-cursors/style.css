@@ -40,22 +40,36 @@ body {
   min-height: 100vh;
   background-color: var(--bg-color);
 
-  padding: 5vw 3vw;
+  padding: 5vw 0 0 3vw;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 h1,
+h2,
 button {
   font-family: 'Inter', sans-serif;
 }
 
-h1 {
-  font-size: 3.2rem;
+h1,
+h2 {
   font-weight: 700;
   line-height: 100%;
 }
 
+h1 {
+  font-size: clamp(2.2rem, 1.2rem + 3.125vw, 3.2rem);
+
+}
+
+h2 {
+  font-size: clamp(2.2rem, -24.4531rem + 20.4082vw, 3.2rem);
+}
+
 p {
-  font-size: 1.9rem;
+  font-size: clamp(1.3rem, 0.7rem + 1.875vw, 1.9rem);
   font-weight: 400;
   line-height: 2.3rem;
 
@@ -67,6 +81,8 @@ p {
 
 main {
   margin-top: 4rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   overflow-x: auto;
 }
 
@@ -187,4 +203,78 @@ tr:nth-child(7) .primary,
 tr:nth-child(7) .secondary,
 tr:nth-child(7) .tertiary {
   cursor: all-scroll;
+}
+
+
+aside {
+  background-color: #130F1E;
+  max-width: 406px;
+  padding-top: 5vw;
+  padding-inline: clamp(1.4rem, -78.5592rem + 61.2245vw, 4.4rem);
+  margin-top: -5vw;
+}
+
+aside p {
+  max-width: 30ch;
+  font-size: clamp(1.3rem, -14.6918rem + 12.2449vw, 1.9rem);
+}
+
+aside div {
+  margin-top: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+aside button {
+  width: 100%;
+}
+
+aside button {
+  display: flex;
+  justify-content: center;
+
+}
+
+@media (max-width: 1250px) {
+  main > div {
+    margin: 0 auto;
+  }
+  aside {
+    text-align: center;
+
+    max-width: none;
+    width: 100%;
+
+    margin: 0;
+
+    margin-bottom: 2rem;
+  }
+
+  aside button {
+    width: initial;
+  }
+
+  aside div {
+    margin-top: 6rem;
+
+  }
+
+  h2 {
+
+    font-size: clamp(2.2rem, 1.2rem + 3.125vw, 3.2rem);
+  }
+
+  aside p {
+    max-width: none;
+    font-size: clamp(1.3rem, 0.7rem + 1.875vw, 1.9rem);
+  }
+  
+
+  body {
+    display: block;
+    padding-right: 3vw;
+  }
+  
 }
