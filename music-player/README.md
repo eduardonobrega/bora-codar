@@ -23,9 +23,9 @@ Você pode acessar o layout no figma [clicando aqui](https://www.figma.com/commu
 ## Desafios 
 - [x]  Criar um player de musica baseado no layout
 - [x]  Responsivo
+- [x]  Deixar o Player Funcional
 
 ## Melhorias Futuras
-- [ ]  Deixar o Player Funcional
 - [ ]  Ter uma playlist de musicas 
 
 ## Autor
