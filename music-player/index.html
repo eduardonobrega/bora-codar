@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Music Player</title>
   </head>
-  <body>
+  <body onload="setMusicDuration()">
     <header>
       <div class="styles">
         <p>Estilo:</p>
@@ -158,7 +158,7 @@
       </div>
 
       <div id="progress">
-        <input type="range" step="0.1" min="0" max="311" value="0" />
+        <input type="range" step="0.1" min="0" max="466.432" value="0" />
 
         <div id="time">
           <div id="currentTime">

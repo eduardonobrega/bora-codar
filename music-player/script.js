@@ -31,6 +31,8 @@ const step = 5;
 let interval;
 
 function setMusicDuration() {
+console.log(music.duration)
+
   totalMinutes = Math.floor(music.duration / 60);
   totalSeconds = Math.floor(music.duration - totalMinutes * 60);
   document.querySelector('#totalTime .minutes').textContent = String(
@@ -67,7 +69,6 @@ function resetTimer() {
   updateMusicTime(0, 0);
 }
 
-document.onload = setMusicDuration;
 
 buttonPlay.addEventListener('click', play);
 buttonPause.addEventListener('click', pause);
