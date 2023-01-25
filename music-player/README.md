@@ -6,7 +6,12 @@ Você pode acessar o layout no figma [clicando aqui](https://www.figma.com/commu
 
 ## Preview
 
-![Animação](https://user-images.githubusercontent.com/87456011/214332435-78074bc2-dc9c-4b45-a7d3-f9601deb3945.gif)
+<div align="center">
+
+[![Video Preview](https://user-images.githubusercontent.com/87456011/214663349-807ec117-2616-41bc-a9c9-4c3ceecf9fec.png)](https://user-images.githubusercontent.com/87456011/214662636-5c80d084-9ee8-4c09-8545-ad8d1e43249f.mp4)
+
+
+</div>
 
 
 <div align="center">
