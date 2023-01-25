@@ -42,10 +42,8 @@ body {
 header {
   padding-inline: 5vw;
   padding-top: 4rem;
-
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 header p {
@@ -61,7 +59,9 @@ header div.styles  div{
 
 header .redes {
   display: flex;
+  align-items: flex-start;
   gap: 1.5rem;
+  padding-top: 2rem;
 }
 
 header a {
