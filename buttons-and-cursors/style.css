@@ -61,7 +61,6 @@ h2 {
 
 h1 {
   font-size: clamp(2.2rem, 1.2rem + 3.125vw, 3.2rem);
-
 }
 
 h2 {
@@ -77,6 +76,11 @@ p {
   opacity: 0.67;
 
   margin-top: 0.8rem;
+}
+
+p strong {
+  font-weight: 700;
+  color: red;
 }
 
 main {
@@ -98,8 +102,13 @@ table {
   border-collapse: collapse;
 }
 
-tr {
+tr:not(tr:first-of-type) {
   background-color: #0b0911;
+  cursor: pointer;
+}
+
+tr:hover td {
+  background-color: #ffffff28;
 }
 
 th {
@@ -137,6 +146,10 @@ button {
   margin: 0 auto;
 }
 
+table button {
+  cursor: pointer;
+}
+
 td {
   padding: 1.6rem;
 }
@@ -164,28 +177,33 @@ tr:last-child td {
   background-color: transparent;
 }
 
-tr:nth-child(3) .primary,
-tr:nth-child(3) .secondary {
-  transition: background-color 300ms;
-}
-
-tr:nth-child(3) .primary:hover {
+tr:nth-child(3) .primary {
   background-color: #9674e6;
 }
 
-tr:nth-child(3) .secondary:hover {
+tr:nth-child(3) .secondary {
   background-color: #6a617f;
 }
 
-tr:nth-child(4) .primary:focus,
-tr:nth-child(4) .secondary:focus,
-tr:nth-child(4) .tertiary:focus {
+tr:nth-child(4) .primary,
+tr:nth-child(4) .secondary,
+tr:nth-child(4) .tertiary {
   outline: 2px solid #d9cdf7;
 }
 
-button:disabled {
+.focus:focus {
+  outline: 2px solid #d9cdf7;
+
+}
+
+
+.disabled {
   opacity: 0.56;
   cursor: not-allowed;
+}
+
+table .disabled {
+  cursor: initial;
 }
 
 button svg {
@@ -193,21 +211,30 @@ button svg {
   height: 1.6rem;
 }
 
-tr:nth-child(6) .primary,
-tr:nth-child(6) .secondary,
-tr:nth-child(6) .tertiary {
+button.loading {
   cursor: wait;
 }
 
-tr:nth-child(7) .primary,
-tr:nth-child(7) .secondary,
-tr:nth-child(7) .tertiary {
-  cursor: all-scroll;
+button.hover {
+  transition: background-color 300ms;
+}
+
+button.movable {
+  cursor: move;
 }
 
 
+button.primary.hover:hover {
+  background-color: #9674E5;
+}
+
+
+button.secondary.hover:hover {
+  background-color: #6A617F;
+}
+
 aside {
-  background-color: #130F1E;
+  background-color: #130f1e;
   max-width: 406px;
   padding-top: 5vw;
   padding-inline: clamp(1.4rem, -78.5592rem + 61.2245vw, 4.4rem);
@@ -234,7 +261,6 @@ aside button {
 aside button {
   display: flex;
   justify-content: center;
-
 }
 
 @media (max-width: 1250px) {
@@ -258,11 +284,9 @@ aside button {
 
   aside div {
     margin-top: 6rem;
-
   }
 
   h2 {
-
     font-size: clamp(2.2rem, 1.2rem + 3.125vw, 3.2rem);
   }
 
@@ -270,11 +294,9 @@ aside button {
     max-width: none;
     font-size: clamp(1.3rem, 0.7rem + 1.875vw, 1.9rem);
   }
-  
 
   body {
     display: block;
     padding-right: 3vw;
   }
-  
 }
