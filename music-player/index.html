@@ -9,8 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Music Player</title>
   </head>
   <body>
@@ -23,17 +24,16 @@
       </div>
     </header>
     <main class="theme1">
-
       <div id="musicData">
         <img
-          src="https://images.unsplash.com/photo-1589128995173-e1cd084b3db9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=885&q=80"
+          src="assets/me-leva-pra-casa.jpeg"
           alt="Capa da musica"
         />
-        <h1>Acorda Devinho<span>Banda Rocketseat</span></h1>
+        <h1>Me Leva Pra Casa<span>Israel Subirá</span></h1>
       </div>
 
       <div id="controllers">
-        <button>
+        <button id="decrement">
           <svg
             width="30"
             height="30"
@@ -48,7 +48,7 @@
           </svg>
         </button>
 
-        <button>
+        <button id="play">
           <svg
             width="30"
             height="30"
@@ -63,7 +63,17 @@
           </svg>
         </button>
 
-        <button>
+        <button id="pause" class="hide">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+              fill="#E1E1E6"
+            ></path>
+          </svg>
+        </button>
+
+        <button id="increment">
           <svg
             width="29"
             height="30"
@@ -92,10 +102,15 @@
       </div>
 
       <div id="progress">
-        <input type="range" name="" id="" value="0" disabled>
+        <input type="range" step="0.1" min="0" max="311" value="0" />
+
         <div id="time">
-          <div id="totalTime"><span class="minutes">03</span>:<span class="seconds">20</span></div>
-          <div id="restTime"><span class="minutes">00</span>:<span class="seconds">12</span></div>
+          <div id="currentTime">
+            <span class="minutes">00</span>:<span class="seconds">00</span>
+          </div>
+          <div id="totalTime">
+            <span class="minutes">05</span>:<span class="seconds">12</span>
+          </div>
         </div>
       </div>
     </main>
