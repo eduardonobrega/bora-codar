@@ -19,7 +19,6 @@ let totalMinutes;
 let totalSeconds;
 
 const input = document.querySelector('input');
-console.log()
 
 input.addEventListener('input', () => {
   music.currentTime = input.value;
@@ -68,7 +67,7 @@ function resetTimer() {
   updateMusicTime(0, 0);
 }
 
-onload = setMusicDuration;
+document.onload = setMusicDuration;
 
 buttonPlay.addEventListener('click', play);
 buttonPause.addEventListener('click', pause);
