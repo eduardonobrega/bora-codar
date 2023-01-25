@@ -40,8 +40,12 @@ body {
 }
 
 header {
-  padding-left: 5vw;
+  padding-inline: 5vw;
   padding-top: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header p {
@@ -50,10 +54,24 @@ header p {
   margin-bottom: 1rem;
 }
 
-header div {
+header div.styles  div{
   display: flex;
   gap: 1rem;
 }
+
+header .redes {
+  display: flex;
+  gap: 1.5rem;
+}
+
+header a {
+  transition: transform 300ms;
+}
+
+header a:hover {
+  transform: translateY(-5px);
+}
+
 
 header div button {
   color: #e1e1e6;
