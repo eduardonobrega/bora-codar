@@ -2,28 +2,19 @@ const themeButtons = document.querySelectorAll('header button');
 const themeButton1 = themeButtons[0];
 const themeButton2 = themeButtons[1];
 const themeButton3 = themeButtons[2];
-
 const player = document.querySelector('main');
 const progress = document.querySelector('#progress');
-
 const buttonDecrement = document.querySelector('#decrement');
 const buttonPlay = document.querySelector('#play');
 const buttonPause = document.querySelector('#pause');
 const buttonIncrement = document.querySelector('#increment');
-
-const music = new Audio('./assets/me-leva-pra-casa.m4a');
-
 const minutesDisplay = document.querySelector('#currentTime .minutes');
 const secondsDisplay = document.querySelector('#currentTime .seconds');
-let totalMinutes;
-let totalSeconds;
-
 const input = document.querySelector('input');
 
-input.addEventListener('input', () => {
-  music.currentTime = input.value;
-  updateMusicTime();
-});
+const music = new Audio('./assets/me-leva-pra-casa.m4a');
+let totalMinutes;
+let totalSeconds;
 
 let minutes = '00';
 let seconds = '00';
@@ -31,7 +22,6 @@ const step = 5;
 let interval;
 
 function setMusicDuration() {
-console.log(music.duration)
 
   totalMinutes = Math.floor(music.duration / 60);
   totalSeconds = Math.floor(music.duration - totalMinutes * 60);
@@ -45,10 +35,7 @@ console.log(music.duration)
   input.setAttribute('max', music.duration);
 }
 
-function changeButtons() {
-  buttonPlay.classList.toggle('hide');
-  buttonPause.classList.toggle('hide');
-}
+setTimeout(setMusicDuration, 50)
 
 function updateMusicTime(m, s) {
   minutes = m || Math.trunc(music.currentTime / 60);
@@ -69,16 +56,6 @@ function resetTimer() {
   updateMusicTime(0, 0);
 }
 
-
-buttonPlay.addEventListener('click', play);
-buttonPause.addEventListener('click', pause);
-
-buttonDecrement.addEventListener('click', () => {
-  music.currentTime -= step;
-  updateMusicTime();
-  buttonIncrement.disabled = false;
-});
-
 function play() {
   buttonPlay.classList.add('hide');
   buttonPause.classList.remove('hide');
@@ -94,6 +71,20 @@ function pause() {
   clearTimeout(interval);
 }
 
+input.addEventListener('input', () => {
+  music.currentTime = input.value;
+  updateMusicTime();
+});
+
+buttonPlay.addEventListener('click', play);
+buttonPause.addEventListener('click', pause);
+
+buttonDecrement.addEventListener('click', () => {
+  music.currentTime -= step;
+  updateMusicTime();
+  buttonIncrement.disabled = false;
+});
+
 buttonIncrement.addEventListener('click', () => {
   if (music.currentTime + step > music.duration) {
     resetTimer();
@@ -102,17 +93,6 @@ buttonIncrement.addEventListener('click', () => {
     music.currentTime += step;
     updateMusicTime();
   }
-
-  // if (music.currentTime + step <= music.duration) {
-  //   music.currentTime += step;
-  //   updateMusicTime();
-  // } else {
-  //   if ((music.currentTime + totalSeconds) <= music.duration) {
-  //     music.currentTime += totalSeconds;
-  //     updateMusicTime();
-  //     buttonIncrement.disabled = true
-  //   }
-  // }
 });
 
 themeButton1.addEventListener('click', () => {
