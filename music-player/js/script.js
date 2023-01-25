@@ -35,7 +35,7 @@ function setMusicDuration() {
   input.setAttribute('max', music.duration);
 }
 
-setTimeout(setMusicDuration, 50)
+setTimeout(setMusicDuration, 500)
 
 function updateMusicTime(m, s) {
   minutes = m || Math.trunc(music.currentTime / 60);
