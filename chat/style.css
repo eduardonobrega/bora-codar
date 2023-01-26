@@ -79,7 +79,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 header .profile {
@@ -175,8 +174,7 @@ header button:hover {
   border-radius: 0.8rem 0.8rem 0 0.8rem;
 }
 
-.wrapper-input:has(input:focus),
-button:focus {
+.wrapper-input:has(input:focus) {
   outline: 2px solid #00b37e;
 }
 .wrapper-input {
@@ -213,9 +211,6 @@ button:focus {
 
 ::-webkit-scrollbar {
   width: 0.5rem;
-}
-
-::-webkit-scrollbar-track {
 }
 
 ::-webkit-scrollbar-thumb {
