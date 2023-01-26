@@ -48,7 +48,7 @@ body {
   grid-template-areas:
     'header'
     'wrapper-chat';
-  grid-template-rows: 7.4rem auto;
+  grid-template-rows: 7.4rem auto 7.4rem;
 }
 
 .wrapper-chat {
@@ -172,6 +172,8 @@ header button:hover {
 .you p {
   background-color: var(--msgYou-color);
   border-radius: 0.8rem 0.8rem 0 0.8rem;
+  align-self: flex-end;
+
 }
 
 .wrapper-input:has(input:focus) {
@@ -190,6 +192,7 @@ header button:hover {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+
 }
 
 .wrapper-input input {
