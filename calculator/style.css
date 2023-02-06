@@ -1,0 +1,121 @@
+:root {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+  font-size: 1.6rem;
+  color: #EBEBEB;
+
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased; /* deixa o contorno da fonte mais suave */
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #807ece 0%, #8e7ece 100%);
+}
+
+main {
+  background-color: #2d2a37;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 18.8rem 5.2rem rgba(0, 0, 0, 0.01), 0px 1.2rem 4.8rem rgba(0, 0, 0, 0.04),
+    0px 6.8rem 4.1rem rgba(0, 0, 0, 0.15), 0px 3rem 3rem rgba(0, 0, 0, 0.26),
+    0px 8px 1.7rem rgba(0, 0, 0, 0.29), inset 0px 6px 8px rgba(255, 255, 255, 0.1),
+    inset 0px -4px 5px rgba(0, 0, 0, 0.22);
+  border-radius: 4.8rem;
+
+  width: 35.6rem;
+  padding: 5.4rem 3.2rem 3.2rem 3.2rem;
+  margin: 0 auto
+}
+
+button {
+  border: none;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.02em;
+
+  width: 6.4rem;
+  height: 6.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #2D2A37;
+  box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04), 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26), 0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+}
+
+#equals {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%), #7F45E2;
+}
+
+.purple {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0.01%, rgba(255, 255, 255, 0.05) 100%), #462878;
+}
+
+.display {
+  padding: 0 2.2rem 0 1.8rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.operation {
+  color: #6B6B6B;
+  font-size: 2rem;
+  display: flex;
+  justify-content: end;
+}
+
+.result {
+  font-size: 3.6rem;
+  
+  height: 5rem;
+  margin: .8rem 0 2.6rem;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+@media (max-width: 360px) {
+  main {
+    transform: scale(.8);
+  }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <main>
+      <div class="display">
+        <div class="operation">1 + 1</div>
+        <div class="result">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 12.625C3 12.2798 3.27982 12 3.625 12H17.375C17.7202 12 18 12.2798 18 12.625C18 12.9702 17.7202 13.25 17.375 13.25H3.625C3.27982 13.25 3 12.9702 3 12.625Z"
+              fill="#6B6B6B"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3 7.625C3 7.27982 3.27982 7 3.625 7H17.375C17.7202 7 18 7.27982 18 7.625C18 7.97018 17.7202 8.25 17.375 8.25H3.625C3.27982 8.25 3 7.97018 3 7.625Z"
+              fill="#6B6B6B"
+            />
+          </svg>
+
+          <span>2</span>
+        </div>
+      </div>
+      <div class="keyboard">
+        <button style="color: #975DFA;">CE</button>
+        <button>C</button>
+        <button>
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M22.4937 5.50628C22.8354 5.84799 22.8354 6.40201 22.4937 6.74372L6.74372 22.4937C6.40201 22.8354 5.84799 22.8354 5.50628 22.4937C5.16457 22.152 5.16457 21.598 5.50628 21.2563L21.2563 5.50628C21.598 5.16457 22.152 5.16457 22.4937 5.50628Z"
+              fill="#EBEBEB"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.3125 6.125C7.10438 6.125 6.125 7.10438 6.125 8.3125C6.125 9.52062 7.10438 10.5 8.3125 10.5C9.52062 10.5 10.5 9.52062 10.5 8.3125C10.5 7.10438 9.52062 6.125 8.3125 6.125ZM4.375 8.3125C4.375 6.13788 6.13788 4.375 8.3125 4.375C10.4871 4.375 12.25 6.13788 12.25 8.3125C12.25 10.4871 10.4871 12.25 8.3125 12.25C6.13788 12.25 4.375 10.4871 4.375 8.3125Z"
+              fill="#EBEBEB"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.6875 17.5C18.4794 17.5 17.5 18.4794 17.5 19.6875C17.5 20.8956 18.4794 21.875 19.6875 21.875C20.8956 21.875 21.875 20.8956 21.875 19.6875C21.875 18.4794 20.8956 17.5 19.6875 17.5ZM15.75 19.6875C15.75 17.5129 17.5129 15.75 19.6875 15.75C21.8621 15.75 23.625 17.5129 23.625 19.6875C23.625 21.8621 21.8621 23.625 19.6875 23.625C17.5129 23.625 15.75 21.8621 15.75 19.6875Z"
+              fill="#EBEBEB"
+            />
+          </svg>
+        </button>
+        <button class="purple">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.5 14C3.5 13.5168 3.89175 13.125 4.375 13.125H23.625C24.1082 13.125 24.5 13.5168 24.5 14C24.5 14.4832 24.1082 14.875 23.625 14.875H4.375C3.89175 14.875 3.5 14.4832 3.5 14Z"
+              fill="#EBEBEB"
+            />
+            <path
+              d="M14 8.75C14.9665 8.75 15.75 7.9665 15.75 7C15.75 6.0335 14.9665 5.25 14 5.25C13.0335 5.25 12.25 6.0335 12.25 7C12.25 7.9665 13.0335 8.75 14 8.75Z"
+              fill="#EBEBEB"
+            />
+            <path
+              d="M14 22.75C14.9665 22.75 15.75 21.9665 15.75 21C15.75 20.0335 14.9665 19.25 14 19.25C13.0335 19.25 12.25 20.0335 12.25 21C12.25 21.9665 13.0335 22.75 14 22.75Z"
+              fill="#EBEBEB"
+            />
+          </svg>
+        </button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="purple">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M22.4937 5.50628C22.8354 5.84799 22.8354 6.40201 22.4937 6.74372L6.74372 22.4937C6.40201 22.8354 5.84799 22.8354 5.50628 22.4937C5.16457 22.152 5.16457 21.598 5.50628 21.2563L21.2563 5.50628C21.598 5.16457 22.152 5.16457 22.4937 5.50628Z"
+              fill="#EBEBEB"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.50628 5.50628C5.84799 5.16457 6.40201 5.16457 6.74372 5.50628L22.4937 21.2563C22.8354 21.598 22.8354 22.152 22.4937 22.4937C22.152 22.8354 21.598 22.8354 21.2563 22.4937L5.50628 6.74372C5.16457 6.40201 5.16457 5.84799 5.50628 5.50628Z"
+              fill="#EBEBEB"
+            />
+          </svg>
+        </button>
+
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="purple">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.5 14C3.5 13.5168 3.89175 13.125 4.375 13.125H23.625C24.1082 13.125 24.5 13.5168 24.5 14C24.5 14.4832 24.1082 14.875 23.625 14.875H4.375C3.89175 14.875 3.5 14.4832 3.5 14Z"
+              fill="#EBEBEB"
+            />
+          </svg>
+        </button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="purple">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.5 14C3.5 13.5168 3.89175 13.125 4.375 13.125H23.625C24.1082 13.125 24.5 13.5168 24.5 14C24.5 14.4832 24.1082 14.875 23.625 14.875H4.375C3.89175 14.875 3.5 14.4832 3.5 14Z"
+              fill="#EBEBEB"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14 3.5C14.4832 3.5 14.875 3.89175 14.875 4.375V23.625C14.875 24.1082 14.4832 24.5 14 24.5C13.5168 24.5 13.125 24.1082 13.125 23.625V4.375C13.125 3.89175 13.5168 3.5 14 3.5Z"
+              fill="#EBEBEB"
+            />
+          </svg>
+        </button>
+
+        <button>
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M22.4937 5.50628C22.8354 5.84799 22.8354 6.40201 22.4937 6.74372L6.74372 22.4937C6.40201 22.8354 5.84799 22.8354 5.50628 22.4937C5.16457 22.152 5.16457 21.598 5.50628 21.2563L21.2563 5.50628C21.598 5.16457 22.152 5.16457 22.4937 5.50628Z"
+              fill="#EBEBEB"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2.625 7.875C2.625 7.39175 3.01675 7 3.5 7H12.25C12.7332 7 13.125 7.39175 13.125 7.875C13.125 8.35825 12.7332 8.75 12.25 8.75H3.5C3.01675 8.75 2.625 8.35825 2.625 7.875Z"
+              fill="#EBEBEB"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.875 2.625C8.35825 2.625 8.75 3.01675 8.75 3.5V12.25C8.75 12.7332 8.35825 13.125 7.875 13.125C7.39175 13.125 7 12.7332 7 12.25V3.5C7 3.01675 7.39175 2.625 7.875 2.625Z"
+              fill="#EBEBEB"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.875 20.125C14.875 19.6418 15.2668 19.25 15.75 19.25H24.5C24.9832 19.25 25.375 19.6418 25.375 20.125C25.375 20.6082 24.9832 21 24.5 21H15.75C15.2668 21 14.875 20.6082 14.875 20.125Z"
+              fill="#EBEBEB"
+            />
+          </svg>
+        </button>
+        <button>0</button>
+        <button>,</button>
+        <button id="equals">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 28 28"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.5 17.5C3.5 17.0168 3.89175 16.625 4.375 16.625H23.625C24.1082 16.625 24.5 17.0168 24.5 17.5C24.5 17.9832 24.1082 18.375 23.625 18.375H4.375C3.89175 18.375 3.5 17.9832 3.5 17.5Z"
+              fill="#EBEBEB"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.5 10.5C3.5 10.0168 3.89175 9.625 4.375 9.625H23.625C24.1082 9.625 24.5 10.0168 24.5 10.5C24.5 10.9832 24.1082 11.375 23.625 11.375H4.375C3.89175 11.375 3.5 10.9832 3.5 10.5Z"
+              fill="#EBEBEB"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
