@@ -10,12 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Calculadora</title>
   </head>
   <body>
     <main>
       <div class="display">
-        <div class="operation">1 + 1</div>
+        <div class="operationDisplay">1 + 1</div>
         <div class="result">
           <svg
             width="20"
@@ -38,7 +39,7 @@
             />
           </svg>
 
-          <span>2</span>
+          <span>0</span>
         </div>
       </div>
       <div class="keyboard">
@@ -72,7 +73,7 @@
             />
           </svg>
         </button>
-        <button class="purple">
+        <button class="purple operation" id="/">
           <svg
             width="28"
             height="28"
@@ -97,10 +98,10 @@
           </svg>
         </button>
 
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="purple">
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="purple operation" id="*">
           <svg
             width="28"
             height="28"
@@ -123,10 +124,10 @@
           </svg>
         </button>
 
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button class="purple">
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="purple operation" id="-">
           <svg
             width="28"
             height="28"
@@ -143,10 +144,10 @@
           </svg>
         </button>
 
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button class="purple">
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="purple operation" id="+">
           <svg
             width="28"
             height="28"
@@ -203,7 +204,7 @@
             />
           </svg>
         </button>
-        <button>0</button>
+        <button class="number">0</button>
         <button>,</button>
         <button id="equals">
           <svg
