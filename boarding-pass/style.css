@@ -34,7 +34,9 @@ textarea {
 
 body {
   min-height: 100vh;
-  background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%);
+  background-color: #8257e5;
+
+  /* background: linear-gradient(167.96deg, #8257e5 0%, #271a45 100%); */
   border-radius: 3.2rem;
   
   display: flex;
@@ -67,7 +69,8 @@ main {
   border-radius: 2.4rem;
   width: 32.7rem;
   
-  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25));
+  /* filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25)); */
+  padding-bottom: 2.4rem;
 }
 
 main p {
@@ -130,7 +133,8 @@ sup {
   display: flex;
   justify-content: space-between;
 
-  border: 1px dashed #000;
+  border-top: 1px dashed #adadad;
+  border-bottom: 1px dashed #adadad;
   padding: 2.4rem 3.2rem;
 }
 
@@ -145,7 +149,65 @@ sup {
   height: 2.4rem;
   background-color: #8257e5;
   position: absolute;
+
+  border-radius: 50%;
+}
+
+#b1 {
   top: -1.2rem;
   left: -1.2rem;
-  border-radius: 50%;
+}
+
+#b2 {
+  top: -1.2rem;
+  right: -1.2rem;
+}
+
+#b3 {
+  bottom: -1.2rem;
+  left: -1.2rem;
+}
+#b4 {
+  bottom: -1.2rem;
+  right: -1.2rem;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.4rem 3.2rem;
+}
+
+.bottom > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.bottom > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom p:first-child span {
+  padding: 4px .8rem;
+  color: #fff;
+  width: fit-content;
+  border-radius: .8rem;
+  background-color: #633BBC;
+}
+
+.bottom p span {
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 1.6rem;
+  font-weight: 500;
+} 
+
+footer {
+  text-align: center;
+}
+
+footer strong {
+  font-weight: 500;
 }
