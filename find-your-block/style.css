@@ -1,0 +1,133 @@
+:root {
+  font-size: 62.5%;
+    --purple: #6246ea;
+  --heading: #121214;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+input,
+button,
+textarea {
+  font-size: 1.6rem;
+
+  font-family: 'Roboto', sans-serif; /* fonte geral */
+  -webkit-font-smoothing: antialiased; /* deixa o contorno da fonte mais suave */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+}
+
+
+h1,
+h2,
+h3 {
+  color: var(--heading);
+}
+
+h1 {
+  font-weight: 700;
+  max-width: 24ch;
+  margin: 1.8rem auto 4rem;
+  font-size: clamp(2rem, 1.1704rem + 2.5926vw, 4.8rem);
+}
+
+h1 > span {
+  color: var(--purple);
+}
+
+header {
+  text-align: center;
+  background-color: #f8f8ff;
+  padding-block: min(8vw, 100px);
+
+  background-image: url('./assets/ilustra-01.svg'), url('assets/ilustra-02.svg');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-size: min(40vw, 407px), min(40vw, 414px);
+}
+
+header > span {
+  color: #e45858;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+form {
+  background-color: #fff;
+
+  width: min(90%, 993px);
+  margin: 0 auto;
+  padding:  clamp(2rem, 1.0588rem + 2.9412vw, 4rem);
+  border: 1px solid #EAEAEA;
+  border-radius: 1rem;
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 2.4rem;
+}
+
+form label {
+  background-color: #F4F4FF;
+  
+  padding: 1.2rem 1.4rem;
+  border-radius: 5px;
+
+  display: flex;
+}
+
+form input,
+form select {
+  background-color: transparent;
+  color: #7C7C8A;
+
+  width: 100%;
+  margin-left: 1.2rem;
+  border: none;
+  font-size: clamp(1.2rem, 1.0118rem + 0.5882vw, 1.6rem);
+}
+
+form button {
+  background-color: #6246EA;
+  color: #fff;
+  
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-block: 1.2rem;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}
+
+
