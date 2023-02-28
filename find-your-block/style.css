@@ -101,6 +101,8 @@ form label {
 
 form input,
 form select {
+  font-weight: 400;
+
   background-color: transparent;
   color: #7c7c8a;
 
