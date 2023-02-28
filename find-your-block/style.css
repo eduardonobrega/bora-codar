@@ -1,6 +1,6 @@
 :root {
   font-size: 62.5%;
-    --purple: #6246ea;
+  --purple: #6246ea;
   --heading: #121214;
 }
 
@@ -39,11 +39,11 @@ body {
   min-height: 100vh;
 }
 
-
 h1,
 h2,
 h3 {
   color: var(--heading);
+  font-weight: 700;
 }
 
 h1 {
@@ -80,8 +80,8 @@ form {
 
   width: min(90%, 993px);
   margin: 0 auto;
-  padding:  clamp(2rem, 1.0588rem + 2.9412vw, 4rem);
-  border: 1px solid #EAEAEA;
+  padding: clamp(2rem, 1.0588rem + 2.9412vw, 4rem);
+  border: 1px solid #eaeaea;
   border-radius: 1rem;
 
   display: grid;
@@ -90,8 +90,8 @@ form {
 }
 
 form label {
-  background-color: #F4F4FF;
-  
+  background-color: #f4f4ff;
+
   padding: 1.2rem 1.4rem;
   border-radius: 5px;
 
@@ -101,7 +101,7 @@ form label {
 form input,
 form select {
   background-color: transparent;
-  color: #7C7C8A;
+  color: #7c7c8a;
 
   width: 100%;
   margin-left: 1.2rem;
@@ -110,9 +110,9 @@ form select {
 }
 
 form button {
-  background-color: #6246EA;
+  background-color: #6246ea;
   color: #fff;
-  
+
   font-weight: 700;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -124,10 +124,61 @@ form button {
   cursor: pointer;
 }
 
+main {
+  width: min(95%, 1216px);
+  padding-block: min(7vw, 100px);
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 0rem + 5vw, 3.2rem);
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section > div > div {
+  border: 1px solid #eaeaea;
+  border-radius: 0.6rem;
+  width: fit-content;
+  padding: .8rem;
+}
+
+label {
+  cursor: pointer;
+  color: #6246EA;
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  padding: .4rem 2.4rem;
+  border-radius: 5px;
+}
+
+input:checked + label {
+  background-color: #6246EA;
+  color: #fff;
+}
+
+input:focus + label {
+  outline: 1px solid black;
+}
+
+@media (max-width: 440px) {
+  section > div {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 640px) {
   form {
     grid-template-columns: 1fr;
   }
 }
-
-
